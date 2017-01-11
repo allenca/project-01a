@@ -1,0 +1,61 @@
+/*font styling*/
+.white-text {
+	color: white;
+	text-align: center;
+}
+
+.background-cover-fix {
+	background-position: ;
+	bg-size
+	bg-repreat
+}
+
+
+.logo {
+    width: 185px;
+}
+
+.cart {
+    float: right;
+}
+
+.Annoucement1 {}
+
+.banner {
+    background-image: url("assets/images/flower-bkgd.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 50vh;
+   	position: relative;
+   	z-index: 1;
+   	width: 100%;
+   	clear: both;
+}
+
+#model {
+    background-image: url("assets/images/banner-girl.png");
+    position: absolute;
+    background-position:top;
+	bottom:0; 
+	left:50%;
+	width:20%;
+	height:95%;
+	background-size:cover;
+	background-repeat:no-repeat;
+	margin-left:-10%;
+	z-index:2;
+	clear: both;
+
+    display: block;
+
+}
+
+/*shopping cart button**/
+
+/* use class heavy than css heavy */
+/* ex <div class="width-10 text-bold text-white sans-family"> */
+/* left
+
+left {float:float
+}*/
+/* dont target an id with css*/
