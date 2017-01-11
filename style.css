@@ -19,7 +19,13 @@
     float: right;
 }
 
-.Annoucement1 {}
+.Annoucement1 {
+
+}
+
+.Annoucement2 {
+
+}
 
 .banner {
     background-image: url("assets/images/flower-bkgd.jpg");
@@ -32,7 +38,7 @@
    	clear: both;
 }
 
-#model {
+.model {
     background-image: url("assets/images/banner-girl.png");
     position: absolute;
     background-position:top;
