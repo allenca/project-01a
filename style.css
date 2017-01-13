@@ -1,67 +1,151 @@
-/*font styling*/
-.white-text {
-	color: white;
-	text-align: center;
+/* font styling */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display";
 }
 
-.background-cover-fix {
+h1 {font-size: 7vh;
+}
+
+.playfair-font {
+  font-family: "Playfair Display";
+}
+
+/* text styling */
+
+.bold {font-weight: 700;}
+
+.italic {
+  font-style: italic;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-red {
+  color: red;
+}
+
+.text-grey {
+  color: grey;
+}
+
+.text-shadow {
+  text-shadow: 4px 2px 4px gray;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.pad-35 {
+  padding: 35vh 0vh 0vh 0vh;
+}
+
+.pad-5 {
+  padding: 5vh 0vh 0vh 0vh 
+}
+
+.item-width-25 {
+  width: 25%;
+}
+
+.logo {
+    float; left;
+   /* clear: both;*/
+    width: 25vh;
+    padding-left: 3vh;
+    padding-top: 1.5vh;
+}
+
+.cart {
+    float: right;
+  /*  clear: both;*/
+    width: 9vh;
+    padding-right: 3vh;
+    padding-top: 1.5vh; 
+}
+
+.banner {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.2), transparent), url("assets/images/flower-bkgd.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+   	background-position: center; 
+   	min-height: 73vh;
+   	width: 100%;
+   	clear:both;
+    z-index: 1
+ }
+
+.model {
+  background: url("assets/images/banner-girl.png");
+	background-size: cover;
+	background-repeat: no-repeat; 
+/*  background-position: top;*/
+	bottom:0; 
+	position: absolute;
+	left: 50%;
+	width: 30%;
+	height: 95%;
+	margin-left: -10%;
+  z-index: 2
+
+}
+.announcement {
+
+}
+
+.season-year {
+
+}
+
+
+
+
+
+
+
+
+
+
+/*banner {
+    background: linear-gradient(rgba(0,0,0,0.5), transparent),
+    url("assets/images/banner-girl.png") center bottom,
+    url("assets/images/flower-bkgd.jpg") center;
+    background-repeat: no-repeat no-repeat no-repeat;
+    background-position: static relative relative;
+    background-size: cover cover cover;
+    height 10vh*/
+
+/*	.Announcement1 {color:white-text
+	color:;
+}
+
+
+background-cover-fix {
 	background-position: ;
 	bg-size
 	bg-repreat
 }
 
-
-.logo {
-    width: 185px;
-}
-
-.cart {
-    float: right;
-}
-
-.Annoucement1 {
-
-}
-
-.Annoucement2 {
-
-}
-
-.banner {
-    background-image: url("assets/images/flower-bkgd.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 50vh;
-   	position: relative;
-   	z-index: 1;
-   	width: 100%;
-   	clear: both;
-}
-
-.model {
-    background-image: url("assets/images/banner-girl.png");
-    position: absolute;
-    background-position:top;
-	bottom:0; 
-	left:50%;
-	width:20%;
-	height:95%;
-	background-size:cover;
-	background-repeat:no-repeat;
-	margin-left:-10%;
-	z-index:2;
-	clear: both;
-
-    display: block;
-
-}
-
-/*shopping cart button**/
+shopping cart button**/
 
 /* use class heavy than css heavy */
 /* ex <div class="width-10 text-bold text-white sans-family"> */
 /* left
 
 left {float:float
-}*/
-/* dont target an id with css*/
+}
+
+display: block;
+
+clearfix
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+  width:100%;
+
+*/

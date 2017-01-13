@@ -2,13 +2,16 @@
 <html>
   <head>
     <title>Aloha Apparel Co.</title>
-    <!-- CSS style sheet, reset, and bootstrap link for social media images -->
+    
+    <!-- CSS style sheet, reset, google fonts and bootstrap link for social media images -->
+    <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i|Raleway:300,300i,500,500i" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- link to make the webpage responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-
-<!-- TRACK COMMIT CHANGE -->
 
   <body>
     <main>
@@ -20,64 +23,64 @@
       </header>
 
       <section class="banner">
-        <div class="model"></div>
-        <div class="Annoucement1">NEW COLLECTION</div>
-        <div class="white-text"><h3>Spring/Summer 2016</h3></div>
+        <div class="model"></div>      
+        <h5 class="text-center text-white text-shadow pad-35">NEW COLLECTION</h5>
+        <h1 class="text center text-shadow text-white pad-5">Spring/Summer 2016</h1>
       </section>
 
-      <section id="about">
-        <div class="Descriptor"></div>
-        <div class="Slogan"></div>
-        <h3>Hand-Crafted <span>Styles</span></h3>
-        <p id>Aloha Apparel Co sells only the finest ready-to-travel clothing.
-           Browse our current selection of products or sign-up for updates below.</p>
+      <section class="about">
+        <div class="Descriptor1">
+          <h3 class="text-center">Hand-Crafted <span class="bold">Styles</span></h3>
+        </div>
+          <p class="text-center">Aloha Apparel Co sells only the finest ready-to-travel clothing. Browse our</p>
+          <p class="text-center">current selection of products or sign-up for updates below.</p>
       </section>
 
-      <section id="products"> <!-- add <section class="style attribs"-->
-          <h3>Most-Loved <span>Products</span></h3>
-          <div id="product descriptions">
+      <section class="products">
+          <h3 class="text-center">Most-Loved<span>Products</span></h3>
+          <div class="product descriptions">
           <div class="item">
             <img src="assets/images/stretch-knit-dress.jpg"/>
-            <p>dresses</p>
-            <h4>Stretch Knit Dress</h4>
-            <p>$169.00</p>
+            <p class="text-grey">DRESSES</p>
+            <h4 class="text-red">Stretch Knit Dress</h4>
+            <p class="text-grey">$169.00</p>
           </div>
-      </section>
 
-      <section>
-        <div class="item">
-          <img src="assets/images/cotton-blue-shirt.jpg"/>
-          <p>shirts</p>
-          <h4>Cotton Blue Shirt</h4>
-          <p>$89.00</p>
-        </div>
-      </section>
+        <section>
+          <div class="item">
+            <img src="assets/images/cotton-blue-shirt.jpg"/>
+            <p class="text-grey">SHIRTS</p>
+            <h4 class="text-red">Cotton Blue Shirt</h4>
+            <p class="text-grey">$89.00</p>
+          </div>
+        </section>
 
-      <section>
-        <div class="item">
-          <img src="assets/images/checked-stretch-dress.jpg"/>
-          <p>dresses</p>
-          <h4>Cotton Blue Shirt</h4>
-          <p>$129.00</p>
-      </section>
+        <section>
+          <div class="item">
+            <img src="assets/images/checked-stretch-dress.jpg"/>
+            <p class="text-grey">DRESSES</p>
+            <h4 class="text-red">Cotton Blue Shirt</h4>
+            <p class="text-grey">$129.00</p>
+        </section>
 
-      <section>
-        <div class="item">
-          <img src="assets/images/blue-hipster-backpack.jpg"/>
-          <p>bags</p>
-          <h4>Blue Hipster Backpack</h4>
-          <p>$69.00</p>
-        </div>
-      </section>                 
+        <section>
+          <div class="item">
+            <img src="assets/images/blue-hipster-backpack.jpg"/>
+            <p class="text-grey">BAGS</p>
+            <h4 class="text-red">Blue Hipster Backpack</h4>
+            <p class="text-grey">$69.00</p>
+          </div>
+        </section>                 
 
-      <section id="subscribe">
-        <h3>Sign-Up for <span>Updates</span></h3>
-        <p>Stay updated on our latest product releases, be first to find out about upcoming sales,
+        <section class="subscribe">
+          <h3>Sign-Up for <span>Updates</span></h3>
+          <p>Stay updated on our latest product releases, be first to find out about upcoming sales,
             and get free style tips from our blog. Unsubscribe at anytime.</p>
-        <div class="email">
-          <input type="email" placeholder="Your Email">
-          <button type="button">Subscribe</button>
-        </div>
+          <div class="email">
+            <input type="email" placeholder="Your Email">
+            <button type="button">Subscribe</button>
+          </div>
+        </section>
       </section>
 
       </main>
@@ -103,5 +106,27 @@
 </html>
 
 
-<!--<input="type email" placeholder-->
+<!-- <input="type email" placeholder>
+for google fonts, in html there's a <link> tag, in css there's an @import tag 
+html, 1 is rest, 2 is style, 3 playfair font, 4 railway font... takes longer to import than css, @import
+css, steps is 1 is reset ... apply, 2 is style... 2x(@import) going to google 
+
+with 2 fonts, use @import. with 3 or more fonts, use html <link> 
+with css, comp doens't get a chance to cache it, with html, comp can cache
+
+with html, end of link says
+?family=railway:300, 300i, 500, 500i | playfair: 200, 300, 400, 500, 700, 900
+these numbers are font weights, most fonts go from 200-900
+
+with css,
+
+text-bold{ font-weight:bold; .... instead, you can use font-weight: 600 (can control this way, semantic css, can)
+}
+
+email submit form, 1 parents, 2 input children
+dont' try to negatively put it in, DO NOT margin 0, auto
+
+never use height or max height except for banner -->
+
+
 
