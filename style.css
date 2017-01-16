@@ -1,4 +1,4 @@
-/* font styling */
+/* header styling */
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Playfair Display";
@@ -7,13 +7,25 @@ h1, h2, h3, h4, h5, h6 {
 h1 {font-size: 7vh;
 }
 
-.playfair-font {
-  font-family: "Playfair Display";
+h2 {font-size: 5.5vh;
+}
+
+h4 {font-size: 2vh;
 }
 
 /* text styling */
 
-.bold {font-weight: 700;}
+.raleway {
+  font-family: "raleway";
+}
+
+.playfair {
+  font-family: "playfair";
+}
+
+.bold {
+  font-weight: 700;
+} 
 
 .italic {
   font-style: italic;
@@ -39,113 +51,102 @@ h1 {font-size: 7vh;
   text-align: center;
 }
 
-.pad-35 {
-  padding: 35vh 0vh 0vh 0vh;
+.txt {
 }
 
-.pad-5 {
-  padding: 5vh 0vh 0vh 0vh 
+/* padding style rules */
+
+.pad-top-40 {
+  padding: 40vh 0vh 0vh 0vh;
 }
+
+.pad-top-25 {
+  padding: 25vh 0vh 0vh 0vh;
+}
+
+.pad-top-5 {
+  padding: 5vh 0vh 0vh 0vh; 
+}
+
+/* size rules */
 
 .item-width-25 {
   width: 25%;
 }
 
+/* container for floats instead of clearfix; clearfix might cause styles to render incorrectly */
+
+.float-container:before,
+.float-container:after {
+  content: "";
+  display: table;
+}
+
+.float-container:after {
+  clear: both;
+}
+
+.float-container {
+  clear: both;
+  zoom: 100%;
+}
+
+/* header images */
+
 .logo {
-    float; left;
-   /* clear: both;*/
-    width: 25vh;
-    padding-left: 3vh;
-    padding-top: 1.5vh;
+  float: left;
+  width: 25vh;
+  padding-left: 3vh;
+  padding-top: 1.5vh;
+  padding-bottom: 2.5vh;
 }
 
 .cart {
-    float: right;
-  /*  clear: both;*/
-    width: 9vh;
-    padding-right: 3vh;
-    padding-top: 1.5vh; 
+  float: right;
+  width: 9vh;
+  padding-right: 3vh;
+  padding-top: 1.5vh; 
 }
 
+/* code for flower background and model in banner */
+
 .banner {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.2), transparent), url("assets/images/flower-bkgd.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-   	background-position: center; 
-   	min-height: 73vh;
-   	width: 100%;
-   	clear:both;
-    z-index: 1
+  width: 100%;
+  background: linear-gradient(rgba(0,0,0,0.3) 100%, transparent), url("assets/images/flower-bkgd.jpg");
+  background-size: 100% 100%;
+  position: relative;
+  background-position: center; 
+  min-height: 73vh;
+  bottom: 0;
+  clear:both;
+  z-index: 1;
  }
 
 .model {
   background: url("assets/images/banner-girl.png");
-	background-size: cover;
+	background-size: contain;
 	background-repeat: no-repeat; 
-/*  background-position: top;*/
-	bottom:0; 
+  background-position: center bottom;
 	position: absolute;
+  bottom: 0; 
 	left: 50%;
-	width: 30%;
-	height: 95%;
+	width: 20%;
+	height: 90%;
 	margin-left: -10%;
-  z-index: 2
-
+  bottom: -20%;
+  filter: brightness(80%);
 }
-.announcement {
 
+.announcement {
 }
 
 .season-year {
-
 }
 
-
-
-
-
-
-
-
-
-
-/*banner {
-    background: linear-gradient(rgba(0,0,0,0.5), transparent),
-    url("assets/images/banner-girl.png") center bottom,
-    url("assets/images/flower-bkgd.jpg") center;
-    background-repeat: no-repeat no-repeat no-repeat;
-    background-position: static relative relative;
-    background-size: cover cover cover;
-    height 10vh*/
-
-/*	.Announcement1 {color:white-text
-	color:;
+.inline-block {
+  display: inline-block;
 }
 
+/*or margin: 0 auto;*/
 
-background-cover-fix {
-	background-position: ;
-	bg-size
-	bg-repreat
-}
 
-shopping cart button**/
-
-/* use class heavy than css heavy */
-/* ex <div class="width-10 text-bold text-white sans-family"> */
-/* left
-
-left {float:float
-}
-
-display: block;
-
-clearfix
-.group:after {
-  content: "";
-  display: table;
-  clear: both;
-  width:100%;
-
-*/
